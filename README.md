@@ -54,11 +54,12 @@ at the middle of the range Ace - 2.  If the face up card is above 8, guess that
 the dealt card will be lower, and if the card is below 8, then guess that the 
 dealt card will be higher.  If the chosen face up card is 8, then randomly guess
 either higher or lower.  For example, if a grid is arranged like:
-```
-J 6 4
-A 8 5
-6 Q 7
-```
+  
+  ```
+  J 6 4
+  A 8 5
+  6 Q 7
+  ```
 then guess the dealt card will be lower than the Ace.
 * Probabilistic - Remember all the cards which have been dealt, and then for 
 each card thats face up, compute the probilities that the dealt card will be 
