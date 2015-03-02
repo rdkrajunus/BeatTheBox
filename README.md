@@ -28,15 +28,17 @@ The game may be played with any number of players.  To setup:
 1. The first player must guess out loud whether the next card to be dealt will be
 higher or lower than one of the cards in the 3x3 grid.  The order of the cards, 
 from high to low are A, K, Q, J, 10 - 2.  If a grid is arranged like:
-```
-J 6 4
-K 8 5
-6 Q 7
-```
+  ```
+  J 6 4
+  K 8 5
+  6 Q 7
+  ```
 then it's common to hear the first player guess, "Lower than a King."
 
 1. The dealer would then deal the top card from the deck face up onto the King.
 If the dealt card is a King, or higher than a King then that pile is turned over.
+If the dealt card is lower than a King, then card is placed on top of the King
+face up.
 1. The next player then makes their guess among any of the cards which are face 
 up, and so on.
 1. If the dealer deals an 8, on top of an 8 then that pile remains face up and 
