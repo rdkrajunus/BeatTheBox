@@ -62,6 +62,6 @@ either higher or lower.  For example, if a grid is arranged like:
   ```
 then guess the dealt card will be lower than the Ace.
 * Probabilistic - Remember all the cards which have been dealt, and then for 
-each card thats face up, compute the probilities that the dealt card will be 
+each card that's face up, compute the probilities that the dealt card will be 
 higher or lower than that card.  Then make the guess which corresponds to the 
 maximum probability.  I'll perform this analysis, hopefully before Sunday.
