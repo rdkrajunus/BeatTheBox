@@ -2,7 +2,7 @@
 **Richard Krajunus**
 
 ## Abstract
-I was introduced to Beat the Box on a snowboarding trip to Vail, CO.  My friends 
+I was introduced to Beat the Box, a card game, on a snowboarding trip to Vail, CO.  My friends 
 and I had a great time playing in our hotel room after a day's ride, however 
 after about our 3rd loss in a row we began to think what any normal person 
 would: THIS GAME IS IMPOSSIBLE!  We tried for days without luck, and it seemed 
