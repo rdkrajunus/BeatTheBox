@@ -73,7 +73,7 @@ When playing according to the probabilistic strategy, can win 14.7% of the time.
 ![Probabilistic Frequency Of Dealt Cards](ProbabilisticFrequencyOfDealtCards.png)
 
 These results are taken from our sample of 25,000 decks, however, are 25,000 
-decks enough to make generalizations about how winnable the game is?  Would the results be much different if our program played every possible deck?  How many possible decks are there?
+decks enough to make generalizations about how winnable the game is?  Would the results be much different if our program played every possible deck?
 
 There are 9.2x10<sup>49</sup> possible decks when suits are not considered.  To put this number in perspective:
 * 4x10<sup>17</sup> seconds have elapsed since the Big Bang
