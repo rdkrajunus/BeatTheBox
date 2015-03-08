@@ -69,7 +69,7 @@ maximum probability.
 A computer playing according to the naive strategy can win 7.8% of time.  The median number of cards successfully dealt in each game is 38, and the mean is 38.4 with standard deviation of 7.5.  *Loosely*, this means that 66% of the time, the game will end after 38.4 cards are dealt plus or minus 7.5, and 95% of the time, the game will end after 38.4 cards plus or minus 15 cards (plus or minus 2 standard deviations).  I say loosely, because the 66% and 95% approximations assume that the number of cards dealt will follow a bell curve, but actually the number of cards dealt is capped at 52.  Sometimes a picture is worth a thousand words:
 ![Naive Frequency Of Dealt Cards](NaiveFrequencyOfDealtCards.png)
 
-When playing according to the probabilistic strategy, can win 14.7% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with standard deviation of 8.0.
+When playing according to the probabilistic strategy, the program can win 14.7% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with standard deviation of 8.0.
 ![Probabilistic Frequency Of Dealt Cards](ProbabilisticFrequencyOfDealtCards.png)
 
 These results are taken from our sample of 25,000 decks, however, are 25,000 
