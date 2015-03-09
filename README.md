@@ -2,7 +2,7 @@
 **Richard Krajunus**
 
 ## Abstract
-I was introduced to Beat the Box on a snowboarding trip to Vail, CO.  My friends 
+I was introduced to Beat the Box, a card game, on a snowboarding trip to Vail, CO.  My friends 
 and I had a great time playing in our hotel room after a day's ride, however 
 after about our 3rd loss in a row we began to think what any normal person 
 would: THIS GAME IS IMPOSSIBLE!  We tried for days without luck, and it seemed 
@@ -70,10 +70,11 @@ A computer playing according to the naive strategy can win 7.7% of time.  The me
 ![Naive Frequency Of Dealt Cards](NaiveFrequencyOfDealtCards.png)
 
 When playing according to the probabilistic strategy, can win 14.3% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with standard deviation of 8.0.
+
 ![Probabilistic Frequency Of Dealt Cards](ProbabilisticFrequencyOfDealtCards.png)
 
 These results are taken from our sample of 25,000 decks, however, are 25,000 
-decks enough to make generalizations about how winnable the game is?  Would the results be much different if our program played every possible deck?  How many possible decks are there?
+decks enough to make generalizations about how winnable the game is?  Would the results be much different if our program played every possible deck?
 
 There are 9.2x10<sup>49</sup> possible decks when suits are not considered.  To put this number in perspective:
 * 4x10<sup>17</sup> seconds have elapsed since the Big Bang
