@@ -8,7 +8,7 @@ after about our 3rd loss in a row we began to think what any normal person
 would: THIS GAME IS IMPOSSIBLE!  We tried for days without luck, and it seemed 
 that rumors of people winning were more myth than reality.
 
-To test this hypothesis, I wrote a program which played the game with 25,000 decks using a naive strategy and found that the program won 7.8% of the time.  When using a probabilistic strategy, the program won 14.7% of the time.
+To test this hypothesis, I wrote a program which played the game with 25,000 decks using a naive strategy and found that the program won 7.7% of the time.  When using a probabilistic strategy, the program won 14.3% of the time.
 
 The game is difficult but not impossible.
 
@@ -66,10 +66,10 @@ higher or lower than that card.  Then make the guess which corresponds to the
 maximum probability.
 
 ## Results
-A computer playing according to the naive strategy can win 7.8% of time.  The median number of cards successfully dealt in each game is 38, and the mean is 38.4 with standard deviation of 7.5.  *Loosely*, this means that 66% of the time, the game will end after 38.4 cards are dealt plus or minus 7.5, and 95% of the time, the game will end after 38.4 cards plus or minus 15 cards (plus or minus 2 standard deviations).  I say loosely, because the 66% and 95% approximations assume that the number of cards dealt will follow a bell curve, but actually the number of cards dealt is capped at 52.  Sometimes a picture is worth a thousand words:
+A computer playing according to the naive strategy can win 7.7% of time.  The median number of cards successfully dealt in each game is 38, and the mean is 38.4 with standard deviation of 7.5.  *Loosely*, this means that 66% of the time, the game will end after 38.4 cards are dealt plus or minus 7.5, and 95% of the time, the game will end after 38.4 cards plus or minus 15 cards (plus or minus 2 standard deviations).  I say loosely, because the 66% and 95% approximations assume that the number of cards dealt will follow a bell curve, but actually the number of cards dealt is capped at 52.  Sometimes a picture is worth a thousand words:
 ![Naive Frequency Of Dealt Cards](NaiveFrequencyOfDealtCards.png)
 
-When playing according to the probabilistic strategy, can win 14.7% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with standard deviation of 8.0.
+When playing according to the probabilistic strategy, can win 14.3% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with standard deviation of 8.0.
 ![Probabilistic Frequency Of Dealt Cards](ProbabilisticFrequencyOfDealtCards.png)
 
 These results are taken from our sample of 25,000 decks, however, are 25,000 
@@ -86,4 +86,4 @@ How confident can we be that our results over these 25,000 decks would be duplic
 
 Playing both strategies through 25,000 decks takes about 75 seconds on my computer, so playing through 10<sup>49</sup> decks should take (roughly) 10<sup>47</sup> seconds.  If at the dawn of time, I ran the program against every deck with my computer, then today I'd still be closer to the beginning of the problem than to the end.
 
-Since our main focus is in a binary outcome, whether the games are won or lost, we can construct a binomial confidence interval to tell us what our results can say about the unplayed decks.  For the naive strategy at the 99% confidence level, the interval is 7.7% - 8.2%, and for the probabilistic strategy the interval is 14.7% - 15.3%.  Another way of saying this, is that if we repeated the experiment for every deck, then 99% of the time the naive strategy would succeed 7.7% - 8.2% of the time, and the probabilistic strategy would succeed 14.7% - 15.3% of the time.
+Since our main focus is in a binary outcome, whether the games are won or lost, we can construct a binomial confidence interval to tell us what our results can say about the unplayed decks.  For the naive strategy at the 99% confidence level, the interval is 7.3% - 8.2%, and for the probabilistic strategy the interval is 13.8% - 14.9%.  Another way of saying this, is that if we repeated the experiment for every deck, then 99% of the time the naive strategy would succeed 7.3% - 8.2% of the time, and the probabilistic strategy would succeed 13.8% - 14.9% of the time.

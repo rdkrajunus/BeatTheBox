@@ -72,18 +72,13 @@ playNaively <- function(deck) {
     return(count)
 }
 
-calcProbHigherLower <- function(boxCard, deck) {
+calcNumHigherLower <- function(boxCard, deck) {
     if (is.na(boxCard)) {
-        return(c(0,0))
+        return(c(NA, NA))
     }
 
-    cardsRemainingTotal <- length(deck)
-
-    higherNumerator <- ifelse(boxCard == 8, length(which(deck >= boxCard)), length(which(deck > boxCard)))
-    lowerNumerator <- ifelse(boxCard == 8, length(which(deck <= boxCard)), length(which(deck < boxCard)))
-
-    probHigher <- length(which(deck > boxCard)) / cardsRemainingTotal
-    probLower <- length(which(deck < boxCard)) / cardsRemainingTotal
+    numHigher <- ifelse(boxCard == 8, length(which(deck >= boxCard)), length(which(deck > boxCard)))
+    numLower <- ifelse(boxCard == 8, length(which(deck <= boxCard)), length(which(deck < boxCard)))
     return(c(probHigher, probLower))
 }
 
@@ -127,9 +122,13 @@ playingDecks <- replicate(sample(deck, replace=F), n=size, simplify = TRUE)
 naive <- apply(playingDecks, 2, playNaively)
 probabilistic <- apply(playingDecks, 2, playProbabilistically)
 #Rprof(NULL)
+#hist(naive, main="Naive Strategy - Frequency of Dealt Cards", xlab="Cards dealt after last successful turn", ylab="Games")
+hist(probabilistic, main="Probabilistic Strategy - Frequency of Dealt Cards", xlab="Cards dealt after last successful turn", ylab="Games")
 nProb <- length(which(naive == 52))/size
 nProbConfint <- binom.confint(x=length(which(naive == 52)), n=size, conf.level=.99, methods=c("exact"))
 
 pProb <- length(which(probabilistic == 52))/size
 pProbConfint <- binom.confint(x=length(which(probabilistic == 52)), n=size, conf.level=.99, methods=c("exact"))
+
+nProbConfint
 pProbConfint
