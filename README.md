@@ -40,6 +40,7 @@ If the dealt card is lower than a King, then card is placed on top of the King
 face up.
 1. The next player then makes their guess among any of the cards which are face 
 up, and so on.
+
 1. If the dealer deals an 8, on top of an 8 then that pile remains face up and 
 the player gets a new turn.
 1. If the dealer deals all the cards and at least 1 pile is face up, then the 
@@ -69,7 +70,7 @@ maximum probability.
 A computer playing according to the naive strategy can win 7.7% of time.  The median number of cards successfully dealt in each game is 38, and the mean is 38.4 with standard deviation of 7.5.  *Loosely*, this means that 66% of the time, the game will end after 38.4 cards are dealt plus or minus 7.5, and 95% of the time, the game will end after 38.4 cards plus or minus 15 cards (plus or minus 2 standard deviations).  I say loosely, because the 66% and 95% approximations assume that the number of cards dealt will follow a bell curve, but actually the number of cards dealt is capped at 52.  Sometimes a picture is worth a thousand words:
 ![Naive Frequency Of Dealt Cards](NaiveFrequencyOfDealtCards.png)
 
-When playing according to the probabilistic strategy, can win 14.3% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with standard deviation of 8.0.
+When playing according to the probabilistic strategy, the program can win 14.3% of the time.  The median number of cards successfully dealt in each game is 39, and the mean is 39.4 with a standard deviation of 8.0.
 
 ![Probabilistic Frequency Of Dealt Cards](ProbabilisticFrequencyOfDealtCards.png)
 
