@@ -74,18 +74,17 @@ When playing according to the probabilistic strategy, the program can win 14.3% 
 
 ![Probabilistic Frequency Of Dealt Cards](ProbabilisticFrequencyOfDealtCards.png)
 
-These results are taken from our sample of 25,000 decks, however, are 25,000 
-decks enough to make generalizations about how winnable the game is?  Would the results be much different if our program played every possible deck?
+These results are taken from our sample of 25,000 decks, however, are 25,000 decks enough to make generalizations about how winnable the game is?   Why stop at 25,000?  Couldn't we play through every possible deck?
 
-There are 9.2x10<sup>49</sup> possible decks when suits are not considered.  To put this number in perspective:
+...well, not so fast.  There are 9.2x10<sup>49</sup> possible decks when suits are not considered.  To put this number in perspective:
 * 4x10<sup>17</sup> seconds have elapsed since the Big Bang
 * 4x10<sup>17</sup> is the number of ways to scramble a Rubik's cube
 * 5x10<sup>22</sup> stars are in the observable Universe
 * between 10<sup>43</sup> and 10<sup>46.7</sup> possible positions can occur in chess
 * 10<sup>80</sup> atoms are in the observable Universe
 
-How confident can we be that our results over these 25,000 decks would be duplicated if we theoretically repeated the experiment over each of the 10<sup>49</sup> decks?  To find out couldn't we just run the program against each of these decks, instead of the randomly chosen 25,000 decks?
+Playing both strategies through 25,000 decks takes about 75 seconds on my computer, so playing through 10<sup>49</sup> decks should take (roughly) 10<sup>46</sup> seconds.  If at the dawn of time, I ran the program against every deck with my computer, then today I'd still be closer to the beginning of the problem than to the end.
 
-Playing both strategies through 25,000 decks takes about 75 seconds on my computer, so playing through 10<sup>49</sup> decks should take (roughly) 10<sup>47</sup> seconds.  If at the dawn of time, I ran the program against every deck with my computer, then today I'd still be closer to the beginning of the problem than to the end.
+Since our main focus is in a binary outcome, whether the games are won or lost, we can construct a binomial confidence interval to tell us what our results would say if we repeated the experiment many times.  For the naive strategy at the 99% confidence level, the interval is 7.3% - 8.2%, and for the probabilistic strategy the interval is 13.8% - 14.9%.  This means that if we performed the identical experiment 100 times, (if we played through 25,000 decks, 100 times) then we can expect that in 99 of those times, the naive strategy's win percentage will be between 7.3% and 8.2%, and between 13.8% and 14.9% for the probabilistic strategy.
 
-Since our main focus is in a binary outcome, whether the games are won or lost, we can construct a binomial confidence interval to tell us what our results can say about the unplayed decks.  For the naive strategy at the 99% confidence level, the interval is 7.3% - 8.2%, and for the probabilistic strategy the interval is 13.8% - 14.9%.
+So the game is hard, but not impossible.  And a lot of fun.
